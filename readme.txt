@@ -3,7 +3,7 @@ Contributors: MarcDK
 Tags: marctv, jquery, colorbox, youtube
 Requires at least: 3.0
 Tested up to: 3.2
-Stable tag: 1.3
+Stable tag: 1.4
 
 == Description ==
 
@@ -23,14 +23,6 @@ Displays a list of videos from a youtube account.
 
 basic script
 
-= 1.1 = 
-
-Added basic installation tutorial
-
-= 1.2 = 
-
-spelling
-
-= 1.3 = 
+= 1.4 = 
 
 spelling
