@@ -1,7 +1,7 @@
 === MarcTV YouTube Bar ===
 Contributors: MarcDK
-Tags: marctv, jquery, colorbox, youtube
-Requires at least: 3.0
+Tags: marctv, jquery, colorbox, youtube, lightbox
+Requires at least: 3.2
 Tested up to: 3.2
 Stable tag: 1.4
 
