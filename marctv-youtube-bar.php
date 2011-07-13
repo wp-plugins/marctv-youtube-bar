@@ -15,7 +15,7 @@
   your option) any later version.
  */
 
-$version = '1.0';
+$version = '1.1';
 function marctv_youtube_bar_scripts() {
   wp_enqueue_style(
           "jquery.marctv-youtube-bar-style", WP_PLUGIN_URL . "/marctv-youtube-bar/marctv-youtube-bar.css",
