@@ -1,9 +1,9 @@
 <?php
 /*
   Plugin Name: MarcTV Youtube Bar
-  Plugin URI: http://www.marctv.de/blog/2010/08/25/marctv-wordpress-plugins/
-  Description: Displays a list of videos from a youtube account. 
-  Version: 1.7
+  Plugin URI: http://www.marctv.de
+  Description:
+  Version: 1.8
   Author: Marc Tönsing
   Author URI: http://www.marctv.de
   License: GPL v2 - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -15,20 +15,19 @@
   your option) any later version.
  */
 
-
+$version = '1.8';
 function marctv_youtube_bar_scripts() {
-  $version = '1.7';
   wp_enqueue_style(
           "jquery.marctv-youtube-bar-style", WP_PLUGIN_URL . "/marctv-youtube-bar/marctv-youtube-bar.css",
           false, $version);
 
   wp_enqueue_script(
           "jquery.marctv-youtube-bar", WP_PLUGIN_URL . "/marctv-youtube-bar/jquery.marctv-youtube-bar.js",
-          array("jquery"), $version, 0);
+          array("jquery", "colorbox"), $version, 0);
 
   wp_enqueue_script(
           "jquery.marctv-youtube-bar-init", WP_PLUGIN_URL . "/marctv-youtube-bar/jquery.marctv-youtube-bar-init.js",
-          array("jquery", "jquery.marctv-youtube-bar"), $version, 1);
+          array("jquery", "colorbox", "jquery.marctv-youtube-bar"), $version, 1);
 }
 
 add_action('wp_print_styles', 'marctv_youtube_bar_scripts');

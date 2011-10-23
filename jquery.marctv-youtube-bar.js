@@ -25,7 +25,13 @@
             var ytDES = value["media$group"]["media$description"].$t;
             var ytTITLE = value["media$group"]["media$title"].$t;
             if(key < o.display_limit){
-              item =  '<li class="col"><div class="crop">';
+              if(key === o.display_limit-1){
+                item =  '<li class="col last"><div class="crop">';
+              }else if(key === 0){
+                item =  '<li class="col first"><div class="crop">';
+              }else{
+                item =  '<li class="col"><div class="crop">';
+              }
               item += '<a data-title="' + ytTITLE + '" data-desc="' + ytDES + '" title="' + ytTITLE + '" rel="marctvyoutubebar' + i + '" href="' + ytURL + '">';
               item += '<span class="sprite playicon"> </span>';
               item += '<span class="sprite icon_youtube"> </span>';
